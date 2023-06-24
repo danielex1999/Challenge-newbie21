@@ -103,6 +103,9 @@ button#download-pink:hover {
   left: -2.2%;
   top: 0%;
 }
+#meet-part #container-chat-img img#img-hero-tablet {
+  display: none;
+}
 #meet-part #container-chat-img img#img-right {
   position: absolute;
   right: -2.2%;
@@ -214,8 +217,11 @@ button#download-pink:hover {
 footer {
   position: relative;
   margin-top: 170px;
-  background-image: url("../starter-code/assets/desktop/image-footer.jpg");
+  background-image: linear-gradient(0deg, rgba(77, 150, 169, 0.8) 0%, rgba(77, 150, 169, 0.8) 0%), url("../starter-code/assets/desktop/image-footer.jpg");
   height: 308px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 footer #number-2 {
   width: 1px;
@@ -242,13 +248,183 @@ footer #number-2 p.circle {
   position: absolute;
   top: 100%;
 }
+footer #container-footer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+footer #container-footer h2 {
+  color: #FAFAFA;
+  width: 30%;
+}
+footer #container-footer p {
+  color: #FAFAFA;
+  width: 30%;
+}
+footer #container-footer button#download-pink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 26px;
+}
+footer #container-footer button#download-pink span {
+  margin-left: 4px;
+  color: #D9B8FF;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 26px;
+}
 
-footer::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: hsla(192, 37%, 48%, 0.8);
+@media screen and (max-width: 768px) and (min-width: 376px) {
+  #meet-part {
+    margin-top: 48px;
+  }
+  #meet-part #container-chat-img {
+    height: 638px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #meet-part #container-chat-img img#img-left {
+    display: none;
+  }
+  #meet-part #container-chat-img img#img-hero-tablet {
+    display: block;
+  }
+  #meet-part #container-chat-img img#img-right {
+    display: none;
+  }
+  #meet-part #container-chat-img #container-chat {
+    height: 262px;
+  }
+  #meet-part #container-chat-img #container-chat h1 {
+    color: #28283D;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 48px;
+    width: 80%;
+  }
+  #meet-part #container-chat-img #container-chat p {
+    color: #87879D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 80%;
+  }
+  #meet-part #container-chat-img #container-chat #buttons {
+    display: flex;
+  }
+  #meet-part #container-chat-img #container-chat #buttons button#download-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+  }
+  #meet-part #container-chat-img #container-chat #buttons button#download-blue span {
+    margin-left: 4px;
+    color: #8FE3F9;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+  }
+  #meet-part #container-chat-img #container-chat #buttons button#download-pink {
+    width: 139px;
+    height: 58px;
+  }
+  #section-modern-use {
+    margin-top: 80px;
+    height: 650px;
+  }
+  #section-modern-use #container-img-rectangles {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #section-modern-use #container-img-rectangles img {
+    width: 164px;
+    height: 156px;
+    border-radius: 8px;
+  }
+  #section-modern-use #smarter-text {
+    width: 573px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #section-modern-use #smarter-text .overline {
+    color: #4D96A9;
+  }
+  #section-modern-use #smarter-text h2 {
+    color: #28283D;
+    width: 75%;
+    text-align: center;
+  }
+  #section-modern-use #smarter-text p {
+    color: #87879D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    width: auto;
+  }
+  footer {
+    position: relative;
+    margin-top: 190px;
+    background-image: linear-gradient(0deg, rgba(77, 150, 169, 0.9) 0%, rgba(77, 150, 169, 0.9) 0%), url("../starter-code/assets/tablet/image-footer.jpg");
+    height: 428px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer #number-2 {
+    top: -25%;
+  }
+  footer #container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+  }
+  footer #container-footer h2 {
+    color: #FAFAFA;
+    width: 55%;
+    text-align: center;
+  }
+  footer #container-footer p {
+    color: #FAFAFA;
+    width: 75%;
+    text-align: center;
+  }
+  footer #container-footer button#download-pink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+  }
+  footer #container-footer button#download-pink span {
+    margin-left: 4px;
+    color: #D9B8FF;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -124,6 +124,10 @@ button#download-pink:hover {
             top: 0%;
         }
 
+        img#img-hero-tablet {
+            display: none;
+        }
+
         img#img-right {
             position: absolute;
             right: -2.2%;
@@ -252,8 +256,11 @@ button#download-pink:hover {
 footer {
     position: relative;
     margin-top: 170px;
-    background-image: url("../starter-code/assets/desktop/image-footer.jpg");
+    background-image: linear-gradient(0deg, rgba(77, 150, 169, 0.8) 0%, rgba(77, 150, 169, 0.8) 0%), url("../starter-code/assets/desktop/image-footer.jpg");
     height: 308px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     #number-2 {
         width: 1px;
@@ -281,12 +288,214 @@ footer {
             top: 100%;
         }
     }
+
+    #container-footer {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            color: #FAFAFA;
+            width: 30%;
+        }
+
+        p {
+            color: #FAFAFA;
+            width: 30%;
+        }
+
+        button#download-pink {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 900;
+            line-height: 26px;
+
+            span {
+                margin-left: 4px;
+                color: #D9B8FF;
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 26px;
+            }
+        }
+    }
 }
 
-footer::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: hsla(192, 37%, 48%, 0.8);
+//Tablet
+@media screen and (max-width: 768px) and (min-width: 376px) {
+    #meet-part {
+        margin-top: 48px;
+
+
+        #container-chat-img {
+            height: 638px;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img#img-left {
+                display: none;
+            }
+
+            img#img-hero-tablet {
+                display: block;
+            }
+
+            img#img-right {
+                display: none;
+            }
+
+            #container-chat {
+                height: 262px;
+
+                h1 {
+                    color: #28283D;
+                    text-align: center;
+                    font-size: 48px;
+                    font-weight: 900;
+                    line-height: 48px;
+                    width: 80%
+                }
+
+                p {
+                    color: #87879D;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    width: 80%;
+                }
+
+                #buttons {
+                    display: flex;
+
+                    button#download-blue {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 15px;
+                        color: #FFF;
+                        font-size: 16px;
+                        font-weight: 900;
+                        line-height: 26px;
+
+                        span {
+                            margin-left: 4px;
+                            color: #8FE3F9;
+                            font-size: 16px;
+                            font-weight: 900;
+                            line-height: 26px;
+                        }
+                    }
+
+                    button#download-pink {
+                        width: 139px;
+                        height: 58px;
+                    }
+                }
+            }
+        }
+    }
+
+    #section-modern-use {
+        margin-top: 80px;
+        height: 650px;
+
+        #container-img-rectangles {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 164px;
+                height: 156px;
+                border-radius: 8px;
+            }
+        }
+
+        #smarter-text {
+            width: 573px;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .overline {
+                color: $color-primary;
+            }
+
+            h2 {
+                color: $color-tertiary;
+                width: 75%;
+                text-align: center;
+            }
+
+            p {
+                color: #87879D;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px;
+                width: auto;
+            }
+        }
+    }
+
+    footer {
+        position: relative;
+        margin-top: 190px;
+        background-image: linear-gradient(0deg, rgba(77, 150, 169, 0.9) 0%, rgba(77, 150, 169, 0.9) 0%), url("../starter-code/assets/tablet/image-footer.jpg");
+        height: 428px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #number-2 {
+            top: -25%;
+        }
+
+        #container-footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            height: 270px;
+
+            h2 {
+                color: #FAFAFA;
+                width: 55%;
+                text-align: center;
+            }
+
+            p {
+                color: #FAFAFA;
+                width: 75%;
+                text-align: center;
+            }
+
+            button#download-pink {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 26px;
+
+                span {
+                    margin-left: 4px;
+                    color: #D9B8FF;
+                    font-size: 16px;
+                    font-weight: 900;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
 }
