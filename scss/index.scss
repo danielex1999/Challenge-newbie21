@@ -32,6 +32,7 @@ body {
     line-height: 26px;
     width: 100%;
     height: 100vh;
+    background: #FAFAFA;
 }
 
 h1 {
@@ -116,7 +117,6 @@ button#download-pink:hover {
         margin-top: 60px;
         height: 358px;
         overflow: hidden;
-        background: hsla(184, 76%, 36%, 0.378);
 
         img#img-left {
             position: absolute;
@@ -177,4 +177,116 @@ button#download-pink:hover {
             }
         }
     }
+}
+
+#section-modern-use {
+    margin-top: 117px;
+    height: 765px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    #number-1 {
+        width: 1px;
+        height: 84px;
+        background: hsla(240, 10%, 57%, 0.25);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p.circle {
+            border-radius: 29px;
+            border: 1px solid rgba(135, 135, 157, 0.25);
+            background: #FAFAFA;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #87879D;
+            position: absolute;
+            top: 100%;
+        }
+    }
+
+    #container-img-rectangles {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 255px;
+            height: 242px;
+            border-radius: 8px;
+        }
+    }
+
+    #smarter-text {
+        width: 540px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .overline {
+            color: $color-primary;
+        }
+
+        h2 {
+            color: $color-tertiary;
+            width: 80%;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #87879D;
+            width: 95%;
+        }
+    }
+}
+
+footer {
+    position: relative;
+    margin-top: 170px;
+    background-image: url("../starter-code/assets/desktop/image-footer.jpg");
+    height: 308px;
+
+    #number-2 {
+        width: 1px;
+        height: 84px;
+        background: hsla(240, 10%, 57%, 0.25);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -35%;
+
+        p.circle {
+            border-radius: 29px;
+            border: 1px solid rgba(135, 135, 157, 0.25);
+            background: #FAFAFA;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #87879D;
+            position: absolute;
+            top: 100%;
+        }
+    }
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: hsla(192, 37%, 48%, 0.8);
 }
