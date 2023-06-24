@@ -426,5 +426,171 @@ footer #container-footer button#download-pink span {
     line-height: 26px;
   }
 }
+@media screen and (max-width: 375px) {
+  #meet-part {
+    margin-top: 48px;
+  }
+  #meet-part #container-chat-img {
+    height: 556px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #meet-part #container-chat-img img#img-left {
+    display: none;
+  }
+  #meet-part #container-chat-img img#img-hero-tablet {
+    display: block;
+    width: 110%;
+  }
+  #meet-part #container-chat-img img#img-right {
+    display: none;
+  }
+  #meet-part #container-chat-img #container-chat {
+    height: 355px;
+  }
+  #meet-part #container-chat-img #container-chat h1 {
+    color: #28283D;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+  }
+  #meet-part #container-chat-img #container-chat p {
+    color: #87879D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 60%;
+  }
+  #meet-part #container-chat-img #container-chat #buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #meet-part #container-chat-img #container-chat #buttons button#download-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  #meet-part #container-chat-img #container-chat #buttons button#download-blue span {
+    margin-left: 4px;
+    color: #8FE3F9;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+  }
+  #meet-part #container-chat-img #container-chat #buttons button#download-pink {
+    width: 139px;
+    height: 58px;
+  }
+  #section-modern-use {
+    margin-top: 64px;
+    height: 865px;
+  }
+  #section-modern-use #container-img-rectangles {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 24px;
+  }
+  #section-modern-use #container-img-rectangles img {
+    width: 151px;
+    height: 143px;
+    border-radius: 8px;
+  }
+  #section-modern-use #smarter-text {
+    width: 327px;
+    height: 284px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #section-modern-use #smarter-text .overline {
+    color: #4D96A9;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  #section-modern-use #smarter-text h2 {
+    color: #28283D;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    width: auto;
+  }
+  #section-modern-use #smarter-text p {
+    color: #87879D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  footer {
+    position: relative;
+    margin-top: 190px;
+    background-image: linear-gradient(0deg, rgba(77, 150, 169, 0.9) 0%, rgba(77, 150, 169, 0.9) 0%), url("../starter-code/assets/mobile/image-footer.jpg");
+    background-size: 100% 428px;
+    height: 428px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer #number-2 {
+    top: -25%;
+  }
+  footer #container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+  }
+  footer #container-footer h2 {
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    width: auto;
+  }
+  footer #container-footer p {
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 80%;
+  }
+  footer #container-footer button#download-pink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+  }
+  footer #container-footer button#download-pink span {
+    margin-left: 4px;
+    color: #D9B8FF;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
