@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "watch-scss": "node-sass scss/index.scss scss/index.css "
+    "watch-scss": "sass scss/index.scss scss/index.css "
   },
   "dependencies": {
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "scss": "^0.2.4"
   }
 }
